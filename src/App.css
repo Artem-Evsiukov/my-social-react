@@ -1,0 +1,39 @@
+.app-wrapper {
+    display: grid;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-areas:
+    "h h"
+    "n c ";
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 2fr 10fr;
+
+}
+
+.app-wrapper-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    grid-area: c;
+    background-color: #edeef0;
+    padding: 20px;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+#root{
+    position: relative;
+    background-color: #edeef0;
+    overflow: hidden;
+    min-height: 100vh;
+}

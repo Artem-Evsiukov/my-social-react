@@ -1,0 +1,136 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 7px;
+}
+
+.dialogs_items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px 20px 10px 10px;
+    margin-right: 20px;
+    border-right: 2px solid #f7f7f7;
+}
+
+/*.active{
+    box-shadow: 14px 8px 0px rgba(0,0,0, .5);
+}*/
+
+.dialog {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #c9c9c9;
+}
+
+.dialog:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.item {
+    color: black;
+    font-size: 20px;
+}
+
+.dialogImg,
+.massageImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
+    flex: none;
+}
+
+.dialogImg img,
+.massageImg img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.massageImg {
+    margin: 0;
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+.massageWrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.massageWrap:nth-child(2n) {
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+
+}
+
+.massage {
+    width: 100%;
+    padding: 20px 10px;
+    margin: 0 10px;
+    background-color: #f5f5f5;
+    border-radius: 7px;
+    text-align: left;
+}
+
+.massageWrap:nth-child(2n) > .massage {
+    background-color: #f8f8f8;
+    text-align: right;
+}
+
+.messageAdd {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+    border-top: 1px solid #edeef0;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.text {
+    border: none;
+    width: 100% !important;
+    background-color: #f5f5f5;
+    resize: none;
+    margin-right: 10px;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.text:focus-visible {
+    border: none;
+    outline: none;
+}
+
+.btn {
+    width: 150px;
+    height: 100%;
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 13px;
+    cursor: pointer;
+}
